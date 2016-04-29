@@ -19,7 +19,7 @@
   }
   h3, h4 {
       margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
+      letter-spacing: 10px;
       font-size: 20px;
       color: #111;
 	 font-family: "Gill Sans";
@@ -43,7 +43,7 @@
   }
   .carousel-inner img {
      /* -webkit-filter: grayscale(90%);
-      filter: grayscale(90%);  make all photos black and white */ 
+      filter: grayscale(90%);  make all photos black and white */
       width: 100%; /* Set width to 100% */
       margin: auto;
   }
@@ -95,11 +95,11 @@
       height: 400px;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
-  } 
+  }
 .slider-size {
 height: 500px; /* This is your slider height */
 }
-  
+
   .navbar {
       margin-bottom: 0;
       border-radius: 0;
@@ -127,12 +127,12 @@ height: 500px; /* This is your slider height */
   footer a:hover {
       color: #777;
       text-decoration: none;
-  } 
+  }
 .footer2{
   background-color:#FA4616;
   padding: 32px;
   color: #f5f5f5;
-  }  
+  }
   .form-control {
       border-radius: 0;
   }
@@ -158,13 +158,13 @@ height: 500px; /* This is your slider height */
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a id="admissions">Admissions</a></li>
-        <li><a id="academics">Academics</a></li>
-        <li><a id="athletics">Athletics</a></li>
-        <li><a id="calendar">Calendar</a></li>
-        <li><a id="map">Campus</a></li>
-        <li><a id="donation">Giving</a></li>
-        <li><a id="about">About</a></li>
+        <li><a href="./admissions.html">Admissions</a></li>
+        <li><a href="./academics.html">Academics</a></li>
+        <li><a href="./athletic.html">Athletics</a></li>
+        <li><a href="./calendar.html">Calendar</a></li>
+        <li class="active"><a href="./campusmap.html">Campus</a></li>
+        <li><a href="./donation.html">Giving</a></li>
+        <li><a href="./about.html">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -177,7 +177,7 @@ height: 500px; /* This is your slider height */
 <!-- Container (Contact Section) -->
 <div id="contact" class="container">
 <br>
-  <h3 class="text-center">JSWT  University Campus Map</h3>  
+  <h3 class="text-center">JSWT  University Campus Map</h3>
   <p><center>Please use the map below to view the campus.</center></p>
 
 </div>
@@ -215,14 +215,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>© JSWT University 2016</p> 
+  <p>© JSWT University 2016</p>
 </footer>
 
 <script>
 $(document).ready(function(){
   // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
+  $('[data-toggle="tooltip"]').tooltip();
+
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
@@ -237,7 +237,7 @@ $(document).ready(function(){
     $('html, body').animate({
       scrollTop: $(hash).offset().top
     }, 900, function(){
-   
+
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
     });
