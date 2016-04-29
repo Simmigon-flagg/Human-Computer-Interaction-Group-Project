@@ -177,17 +177,17 @@ height: 500px; /* This is your slider height */
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-       <a class="navbar-brand" href="./index.html">JSWT University</a>
+       <a class="navbar-brand" id="home">JSWT University</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="./admissions.html">Admissions</a></li>
-        <li><a href="./academics.html">Academics</a></li>
-        <li class="active"><a href="./athletic.html">Athletics</a></li>
-        <li><a href="./calendar.html">Calendar</a></li>
-        <li><a href="./campusmap.html">Campus</a></li>
-        <li><a href="./donation.html">Giving</a></li>
-        <li><a href="./about.html">About</a></li>
+        <li><a id="admissions">Admissions</a></li>
+        <li><a id="academics">Academics</a></li>
+        <li class="active"><a id="athletics">Athletics</a></li>
+        <li><a id="calendar">Calendar</a></li>
+        <li><a id="map">Campus</a></li>
+        <li><a id="donation">Giving</a></li>
+        <li><a id="about">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -419,13 +419,13 @@ document.getElementById("map").onclick = function () {
 <script>
  document.getElementById("about").style.cursor = "pointer";
 document.getElementById("about").onclick = function () {
-    location.href = "csc4720_a3c_about.html";
+    location.href = "about.html";
 };
 </script>
 <script>
  document.getElementById("home").style.cursor = "pointer";
 document.getElementById("home").onclick = function () {
-    location.href = "csc4720_a3c_home.html";
+    location.href = "index.html";
 };
 
 </script>
