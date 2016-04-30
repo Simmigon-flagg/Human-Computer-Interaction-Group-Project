@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JSWT University</title>
+  <link rel="shortcut icon" href="torchicon.ico" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  /* Remove the navbar's default margin-bottom and rounded borders */
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #0021A5;
+    font-family: "Gill Sans";
+    text-transform: uppercase;
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 1;
+    opacity: 0.9;
+  }
+  .navbar a {
+    color: #fff !important;
+  }
+
+footer {
+  background-color:#0021A5;
+      /*background-color: #2d2d30;*/
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+
+  .carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+     <a class="navbar-brand" id="home">JSWT University</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a id="admissions">Admissions</a></li>
+        <li><a id="academics">Academics</a></li>
+        <li><a id="athletics">Athletics</a></li>
+        <li><a id="calendar">Calendar</a></li>
+        <li><a id="map">Campus</a></li>
+        <li><a id="donation">Giving</a></li>
+        <li><a id="about">About</a></li>
+      </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br><br>
+ <div data-tockify-component="calendar" data-tockify-calendar="jswtuniversity"></div>
+<script data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+
+<!-- Add Google Maps -->
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+   <p>© JSWT University 2016</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+})
+</script>
+<script>
+ document.getElementById("athletics").style.cursor = "pointer";
+document.getElementById("athletics").onclick = function () {
+    location.href = "athletic.html";
+};
+</script>
+<script>
+ document.getElementById("map").style.cursor = "pointer";
+document.getElementById("map").onclick = function () {
+    location.href = "campusmap.html";
+};
+</script>
+<script>
+ document.getElementById("about").style.cursor = "pointer";
+document.getElementById("about").onclick = function () {
+    location.href = "csc4720_a3c_about.html";
+};
+</script>
+<script>
+ document.getElementById("home").style.cursor = "pointer";
+document.getElementById("home").onclick = function () {
+    location.href = "csc4720_a3c_home.html";
+};
+
+</script>
+<script>
+ document.getElementById("calendar").style.cursor = "pointer";
+document.getElementById("calendar").onclick = function () {
+    location.href = "calender.html";
+};
+</script>
+<script>
+document.getElementById("donation").style.cursor = "pointer";
+document.getElementById("donation").onclick = function () {
+    location.href = "donation.html";
+};
+</script>
+<script>
+document.getElementById("admissions").style.cursor = "pointer";
+document.getElementById("admissions").onclick = function () {
+    location.href = "admissions.html";
+};
+</script>
+<script>
+document.getElementById("academics").style.cursor = "pointer";
+document.getElementById("academics").onclick = function () {
+    location.href = "academics.html";
+};
+</script>
+
+
+</body>
+</html>
